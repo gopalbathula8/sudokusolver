@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #3F4122;
+}
+.sudokuContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 85vh;
+}
+.sudokuContainer h1{
+    color:#D4D6CF;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 0px;
+}
+.sudokuTable {
+    border-collapse: collapse;
+    margin-bottom: 10px;
+}
+.sudokuCellContainer {
+    border: 1px solid #000;
+    width: 8vh;
+    height: 8vh;
+    background-color: antiquewhite;
+    text-align: center;
+}
+
+.sudokuCell {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 4vh;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: black;
+}
+.solveButton {
+    width: 20vh;
+    height: 10vh;
+    font-size: 3vh;
+    background-color:#536F16;
+    color: #D4D6CF;
+    border: 0.5vh solid transparent;
+    border-radius: 1vh;
+    cursor: pointer;
+    margin-right: 55px;
+}
+.solveButton:hover {
+    border: 2px solid black;
+}
+.resetButton {
+    width: 20vh;
+    height: 10vh;
+    font-size: 3vh;
+    background-color: #D4D6CF;
+    color: rgb(14, 13, 13);
+    border: 0.5vh solid transparent;
+    border-radius: 1vh;
+    cursor: pointer;
+}
+
+.resetButton:hover {
+    border: 2px solid black;
+}
+
+@media (max-width: 600px) {
+    .sudokuContainer {
+        height: auto;
+
+        padding: 5px;
+
+    }
+
+    .sudokuContainer h1 {
+        font-size: 30px;       
+ 
+    }
+
+    .sudokuCellContainer {
+        width: 10vh; 
+        height: 10vh;
+    }
+
+    .sudokuCell {
+        font-size: 3vh;
+    }
+
+    .solveButton,
+    .resetButton {
+        width: 18vh;
+        
+        height: 8vh;
+       
+        font-size: 2.5vh;
+       
+        margin-right: 0;
+       
+        margin-bottom: 10px;
+      
+    }
+}
